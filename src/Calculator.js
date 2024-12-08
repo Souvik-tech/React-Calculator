@@ -43,21 +43,142 @@ const Calculator = () => {
     <div className="calc-div">
       <h1>React Calculator</h1>
       <br />
-      <input value={value}/>
+      <input value={value} type='text'/>
      
       <div className="result-display">{result}</div>
       <br />
       <div className="button-group">
-        {['7', '8', '9', '+', '4', '5', '6', '-', '1', '2', '3', '*', 'C', '0', '=', '/'].map((btn) => (
+       
           <button
-            key={btn}
+           
             className="calc-button"
-            value={btn}
+            value="7"
             onClick={handleClick}
           >
-            {btn}
+            7
           </button>
-        ))}
+          <button
+           
+           className="calc-button"
+           value="8"
+           onClick={handleClick}
+         >
+           8
+         </button>
+         <button
+           
+           className="calc-button"
+           value="9"
+           onClick={handleClick}
+         >
+           9
+         </button>
+         <button
+           
+           className="calc-button"
+           value="+"
+           onClick={handleClick}
+         >
+           +
+         </button>
+         <button
+           
+           className="calc-button"
+           value="4"
+           onClick={handleClick}
+         >
+           4
+         </button>
+         <button
+           
+           className="calc-button"
+           value="5"
+           onClick={handleClick}
+         >
+           5
+         </button>
+         <button
+           
+           className="calc-button"
+           value="6"
+           onClick={handleClick}
+         >
+           6
+         </button>
+         <button
+           
+           className="calc-button"
+           value="-"
+           onClick={handleClick}
+         >
+           -
+         </button>
+         <button
+           
+           className="calc-button"
+           value="1"
+           onClick={handleClick}
+         >
+           1
+         </button>
+         <button
+           
+           className="calc-button"
+           value="2"
+           onClick={handleClick}
+         >
+           2
+         </button>
+         <button
+           
+           className="calc-button"
+           value="3"
+           onClick={handleClick}
+         >
+           3
+         </button>
+         <button
+           
+           className="calc-button"
+           value="*"
+           onClick={handleClick}
+         >
+           *
+         </button>
+         <button
+           
+           className="calc-button"
+           value="C"
+           onClick={handleClick}
+         >
+           C
+         </button>
+         <button
+           
+           className="calc-button"
+           value="0"
+           onClick={handleClick}
+         >
+           0
+         </button>
+         <button
+           
+           className="calc-button"
+           value="="
+           onClick={handleClick}
+         >
+           =
+         </button>
+         <button
+           
+           className="calc-button"
+           value="/"
+           onClick={handleClick}
+         >
+           /
+         </button>
+
+       
       </div>
     </div>
   );
